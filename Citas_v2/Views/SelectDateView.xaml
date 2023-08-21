@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Citas_v2.Views.SelectDateView">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowSpacing="{OnPlatform iOS=25,Android=20}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <!--1-->
+                    <RowDefinition Height="Auto"/>
+                    <!--2-->
+                    <RowDefinition Height="Auto"/>
+                    <!--3-->
+                    <RowDefinition Height="Auto"/>
+                    <!--4-->
+                    <RowDefinition Height="Auto"/>
+                    <!--5-->
+                    <RowDefinition Height="Auto"/>
+                   
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!--DATE-->
+                <StackLayout Grid.Row="1" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Label
+                         Text="Selecciona la fecha de tu cita"
+                         FontSize="{OnPlatform Android=13}"
+                         TextColor="Black"/>
+
+                    <Frame
+                         HasShadow="{OnPlatform Android=true,iOS=false}"
+                         Padding="{OnPlatform Android=6,iOS=0}"
+                         CornerRadius="{OnPlatform Android=7}">
+
+                        <DatePicker
+                           x:Name="dt"
+                            MaximumDate="01/01/2025"
+                            Date="{Binding dateSelect}"/>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" HorizontalOptions="Center" Orientation="Vertical" >
+                    <Button
+                        Text="Siguiente"
+                        TextColor="Black"
+                        Font="Montserrat-Medium.otf"
+                        FontSize="{OnPlatform Android=15}"
+                        BackgroundColor="#fcfcfc"
+                        BorderColor="#f2f2f2"
+                        BorderWidth="1.5"
+                        WidthRequest="300"
+                        HeightRequest="50"
+                        Clicked="Button_Clicked"/>
+                </StackLayout>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

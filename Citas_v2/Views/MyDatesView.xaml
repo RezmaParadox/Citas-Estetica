@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Citas_v2.Views.MyDatesView"
+             >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Agregar nueva cita" IconImageSource="add.png" Clicked="AddToolBarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="CitastListView" 
+                  ItemsSource="{Binding students}"
+                  HasUnevenRows="True"                
+                  IsRefreshing="True"
+                  IsPullToRefreshEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <!--<ViewCell.ContextActions>
+                                <MenuItem Text="Edit"
+                                          x:Name="EditMenuItem"
+                                          CommandParameter="{Binding Id}"
+                                          Clicked="EditMenuItem_Clicked"></MenuItem>
+                                <MenuItem Text="Delete"
+                                          x:Name="DeleteMenuItem"
+                                          CommandParameter="{Binding Id}"
+                                          Clicked="DeleteMenuItem_Clicked"></MenuItem>
+                            </ViewCell.ContextActions>-->
+                            <SwipeView>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="Delete" BackgroundColor="yellow" CommandParameter="{Binding Id}"
+                                                   x:Name="DeleteSwipeItem"
+                                                   Invoked="DeleteMenuItem_Clicked"></SwipeItem>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+
+                                <StackLayout Orientation="Horizontal" Padding="5">
+
+                                    <StackLayout HorizontalOptions="StartAndExpand">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <!--1-->
+                                                <RowDefinition Height="Auto"/>
+                                                <!--2-->
+                                                <RowDefinition Height="Auto"/>
+                                                <!--3-->
+                                                <RowDefinition Height="Auto"/>
+                                                <!--4-->
+                                                <RowDefinition Height="Auto"/>
+                                                <!--5-->
+                                                <RowDefinition Height="Auto"/>
+                                                <!--6-->
+                                                <RowDefinition Height="Auto"/>
+                                                <!--5-->
+                                                <RowDefinition Height="Auto"/>
+                                                <!--6-->
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label Text="Nombre del cliente:" Grid.Row="0" Grid.Column="0" FontSize="Medium" />
+                                            <Label Text="{Binding Client}" Grid.Row="0" Grid.Column="1" FontSize="Medium" />
+                                            <Label Text="Nombre del cliente:" Grid.Row="0" Grid.Column="0" FontSize="Medium" />
+                                            <Label Text="Fecha de la cita:" Grid.Row="1" Grid.Column="0" FontSize="Medium" />
+                                            <Label Text="{Binding Date}" Grid.Row="1" Grid.Column="1" FontSize="Medium"/>
+                                            <Label Text="Hora de la cita:" Grid.Row="2" Grid.Column="0" FontSize="Medium" />
+                                            <Label Text="{Binding Hour}" Grid.Row="2" Grid.Column="1" FontSize="Medium"/>
+                                            <Label Text="Servicio comprado:" Grid.Row="3" Grid.Column="0" FontSize="Medium" />
+                                            <Label Text="{Binding Type}" Grid.Row="3" Grid.Column="1" FontSize="Medium"/>
+
+                                        </Grid>
+                                    </StackLayout>
+
+                                </StackLayout>
+                            </SwipeView>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Citas_v2.ventanaOpciones">
+    <ContentPage.Content>
+
+
+        <Grid HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Padding="20" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+            <Grid RowDefinitions="Auto,Auto,Auto" HeightRequest="270" >
+
+
+
+                <Image Opacity="0.9" Margin="-25" Source="https://cdn.pixabay.com/photo/2020/02/19/22/57/blue-background-4863452_1280.jpg"
+                           Aspect="AspectFill" Grid.Row="0" Grid.RowSpan="2"></Image>
+
+
+                <Label Text="BIENVENUE BELLE DAME"
+                       Grid.Row="0"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                       TextColor="White"
+                       
+                       FontAttributes="Bold"
+                   FontSize="Large"/>
+
+
+                <Label x:Name="LblUser" FontSize="Medium" Grid.Row="1" HorizontalOptions="Center" TextColor="White" FontAttributes="Bold" Text=""></Label>
+
+                <Image Grid.Row="2" Margin="0,0" Source="https://i.pinimg.com/originals/00/2b/49/002b49e79e423ff5c1b1d733357c345f.png" Aspect="AspectFit" HeightRequest="180" WidthRequest="0"></Image>
+
+
+            </Grid>
+
+
+
+            <Label Grid.Row="1"  Text="LA BELLE" TextColor="#202020" FontSize="18" FontAttributes="Bold"></Label>
+            <Label Grid.Row="2" Text="Aquí te embelleceremos:"
+                   TextColor="Gray"></Label>
+
+            <Frame Grid.Row="3" Grid.RowSpan="4"  HasShadow="True" Margin="0,10,0,0" CornerRadius="20" HeightRequest="90">
+                <Grid VerticalOptions="Center" ColumnDefinitions="*,2,*,2,*">
+
+
+                    <ImageButton Source="https://cdn.icon-icons.com/icons2/72/PNG/256/add_14430.png"
+                        BackgroundColor="Transparent"
+                                 x:Name="agregarCitas"
+                                 Clicked = "agregarCitas_Clicked"
+                                 Grid.Row="0"
+                                 Grid.Column="0"
+                                 
+                                 
+                                 FlexLayout.Grow="0"
+                                 
+                                 Aspect="AspectFit"
+                    
+                                 
+                                 />
+
+                    <Label Text="Agenda una cita" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center"
+           FontSize="14"
+                           Grid.Row="0"
+                                 Grid.Column="0"
+           Margin="0,130,0,0" />
+
+
+                    <ImageButton 
+                                 Source="https://cdn.icon-icons.com/icons2/72/PNG/256/phonebook_notebook_14401.png"
+                        BackgroundColor="Transparent"
+                                 x:Name="verCitas"
+                                 Clicked = "verCitas_Clicked"
+                                 Grid.Row="0"
+                                 Grid.Column="2"
+                                 
+                                 FlexLayout.Grow="0"
+                                 
+                                 Aspect="AspectFit"
+                    
+                                 
+                                 />
+
+
+
+                    <Label Text="Ver mis citas" 
+                           
+                           
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center"
+                           FontSize="14"
+                           Grid.Row="0"
+                           Grid.Column="2"
+                           Margin="0,130,0,0" 
+                           />
+
+
+
+                    <ImageButton Source="https://cdn.icon-icons.com/icons2/72/PNG/96/chat_messages_14395.png"
+                        BackgroundColor="Transparent"
+                                 x:Name="enviarMensaje"
+                                 Clicked = "enviarMensaje_Clicked"
+                                 Grid.Row="0"
+                                 Grid.Column="4"
+                                 FlexLayout.Grow="0"
+                                 Aspect="AspectFit"
+                    
+                                 
+                                 />
+
+
+
+                    <Label Text="Enviar mensaje" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center"
+           FontSize="14"
+                           Grid.Row="0"
+                                 Grid.Column="4"
+           Margin="0,130,0,0" />
+
+
+
+
+
+                    <ImageButton Source="https://cdn.icon-icons.com/icons2/72/PNG/96/favourite_14390.png"
+                        BackgroundColor="Transparent"
+                                 x:Name="favorite"
+                                 Clicked = "favorite_Clicked"
+                                 
+                                 Grid.Row="1"
+                                 Grid.Column="2"
+                                 
+                                 FlexLayout.Grow="2"
+                                 
+                                 Aspect="AspectFit"
+                    
+                                 
+                                 />
+
+                    <Label Text="Like en FB" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center"
+           FontSize="14"
+                           Grid.Row="1"
+                                 Grid.Column="2"
+           Margin="0,130,0,0" />
+
+
+
+
+
+
+                </Grid>
+            </Frame>
+
+
+
+
+
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

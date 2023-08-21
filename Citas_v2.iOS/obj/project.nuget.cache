@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "9P+VMP57TKpUsaC2QpxTfLcNbnlHaihZbHo5+BYWU0jFs+Eq7M6LaxyqRp+FS2AhFC1X3kXRJKsQotq7OqVWvQ==",
+  "success": true,
+  "projectFilePath": "C:\\AppCitasV\\Citas_v2\\Citas_v2.iOS\\Citas_v2.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\navar\\.nuget\\packages\\commonservicelocator\\2.0.2\\commonservicelocator.2.0.2.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\firebasedatabase.net\\3.3.0\\firebasedatabase.net.3.3.0.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\firebasestorage.net\\1.0.3\\firebasestorage.net.1.0.3.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\mvvmlightlibs\\5.4.1.1\\mvvmlightlibs.5.4.1.1.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\sharpnado.shadows\\1.2.0\\sharpnado.shadows.1.2.0.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\system.componentmodel\\4.0.1\\system.componentmodel.4.0.1.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\system.diagnostics.contracts\\4.0.1\\system.diagnostics.contracts.4.0.1.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\system.dynamic.runtime\\4.0.11\\system.dynamic.runtime.4.0.11.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\system.reactive\\3.1.1\\system.reactive.3.1.1.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\system.reactive.core\\3.1.1\\system.reactive.core.3.1.1.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\system.reactive.interfaces\\3.1.1\\system.reactive.interfaces.3.1.1.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\system.reactive.linq\\3.1.1\\system.reactive.linq.3.1.1.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\system.reactive.platformservices\\3.1.1\\system.reactive.platformservices.3.1.1.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\system.runtime.interopservices.windowsruntime\\4.0.1\\system.runtime.interopservices.windowsruntime.4.0.1.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\thomaslevesque.weakevent\\4.1.0\\thomaslevesque.weakevent.4.1.0.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "C:\\Users\\navar\\.nuget\\packages\\xamarin.forms.openwhatsapp\\1.0.1\\xamarin.forms.openwhatsapp.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

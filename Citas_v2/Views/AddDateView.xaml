@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Citas_v2.Views.AddDateView">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowSpacing="{OnPlatform iOS=25,Android=20}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <!--1-->
+                    <RowDefinition Height="Auto"/>
+                    <!--2-->
+                    <RowDefinition Height="Auto"/>
+                    <!--3-->
+                    <RowDefinition Height="Auto"/>
+                    <!--4-->
+                    <RowDefinition Height="Auto"/>
+                    <!--5-->
+                    <RowDefinition Height="Auto"/>
+                    <!--6-->
+                    <RowDefinition Height="Auto"/>
+                    <!--7-->
+                    <RowDefinition Height="Auto"/>
+                    <!--8-->
+                    <RowDefinition Height="Auto"/>
+                    <!--1-->
+                    <RowDefinition Height="Auto"/>
+                    <!--2-->
+                    <RowDefinition Height="Auto"/>
+                    <!--3-->
+                    <RowDefinition Height="Auto"/>
+                    <!--4-->
+                    <RowDefinition Height="Auto"/>
+                    <!--5-->
+                    <RowDefinition Height="Auto"/>
+                    <!--6-->
+                    <RowDefinition Height="Auto"/>
+                    <!--7-->
+                    <RowDefinition Height="Auto"/>
+                    <!--8-->
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!--Nombre-->
+                <StackLayout Grid.Row="1" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Label
+                         Text="Nombre completo"
+                         FontSize="{OnPlatform Android=13}"
+                         TextColor="Black"/>
+
+                    <Frame
+                         HasShadow="{OnPlatform Android=true,iOS=false}"
+                         Padding="{OnPlatform Android=6,iOS=0}"
+                         CornerRadius="{OnPlatform Android=7}">
+
+                        <Entry
+                        Placeholder="Nombre"
+                        MaxLength="25"
+                        Keyboard="Text"
+                        FontSize="{OnPlatform Android=15,iOS=16}"
+                        Text="{Binding clientTxt, Mode=TwoWay}"
+                        IsEnabled="{Binding IsEnabledTxt}"/>
+
+                    </Frame>
+                </StackLayout>
+                <!--Time-->
+                <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="300" Orientation="Vertical" >
+                    <Label
+                         Text="Selecciona la fecha de tu cita"
+                         FontSize="{OnPlatform Android=13}"
+                         TextColor="Black"/>
+
+                    <Frame
+                         HasShadow="{OnPlatform Android=true,iOS=false}"
+                         Padding="{OnPlatform Android=6,iOS=0}"
+                         CornerRadius="{OnPlatform Android=7}">
+
+
+                        <Picker x:Name="comboPicker"
+                            Title="Seleccione una hora"
+                            ItemsSource="{Binding ItemSourceTxt}"
+                            SelectedItem="{Binding ItemSelectTxt}"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Grid.Row="5" HorizontalOptions="Center" Orientation="Vertical" >
+                    <Button
+                        Text="Agregar cita"
+                        TextColor="Black"
+                        Font="Montserrat-Medium.otf"
+                        FontSize="{OnPlatform Android=15}"
+                        BackgroundColor="#fcfcfc"
+                        BorderColor="#f2f2f2"
+                        BorderWidth="1.5"
+                        WidthRequest="300"
+                        HeightRequest="50"
+                        Command="{Binding AddDateCommand}"/>
+                </StackLayout>
+
+                <!--sexo-->
+                <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="300" Orientation="Horizontal" Spacing="20">
+                    <StackLayout WidthRequest="220">
+                        <RadioButton x:Name="RadioBtn1" Content="Corte de pelo" Value="Hombre" IsChecked="{Binding op1Txt}" GroupName="ProgramminRadioBtn"/>
+                        <RadioButton x:Name="RadioBtn2" Content="Tinte" Value="Mujer" IsChecked="{Binding op2Txt}" GroupName="ProgramminRadioBtn"/>
+                        <RadioButton x:Name="RadioBtn3" Content="Manicura" Value="Hombre" IsChecked="{Binding op3Txt}" GroupName="ProgramminRadioBtn"/>
+                        <RadioButton x:Name="RadioBtn4" Content="Pedicura" Value="Mujer" IsChecked="{Binding op4Txt}" GroupName="ProgramminRadioBtn"/>
+                        <RadioButton x:Name="RadioBtn5" Content="Peinado" Value="Hombre" IsChecked="{Binding op5Txt}" GroupName="ProgramminRadioBtn"/>
+                        <RadioButton x:Name="RadioBtn6" Content="Depilación a cera" Value="Mujer" IsChecked="{Binding op6Txt}" GroupName="ProgramminRadioBtn"/>
+                    </StackLayout>
+                </StackLayout>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
